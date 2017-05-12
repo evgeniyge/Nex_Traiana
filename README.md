@@ -15,6 +15,7 @@ Search key: Ender's Game
 C:\Users\evgeniyge\OneDrive\Personal\Python\NexTriana>python main.py
 
 Items without rating:
+
 1 - The Ender Quartet Series (4 Book Series)
 by Orson Scott Card
 Kindle Edition
