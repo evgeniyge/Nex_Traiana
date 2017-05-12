@@ -16,6 +16,8 @@ C:\Users\evgeniyge\OneDrive\Personal\Python\NexTriana>python main.py
 
 Expected results num 16, actual 18
 Items without rating:
+
+
 1 - The Ender Quartet Series (4 Book Series)
 by Orson Scott Card
 Kindle Edition
