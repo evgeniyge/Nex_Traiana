@@ -8,11 +8,11 @@ Prerequisites:
 2) Selenium - http://selenium-python.readthedocs.io/index.html
 3) Chrome
 4) Chrome driver - http://selenium-python.readthedocs.io/index.html
-
+5) By default location of the chromedriver is C:\chromedriver. (Can be change in class Browser.py)
 Example of execution: 
 Search key: Ender's Game
 
-C:\Users\evgeniyge\OneDrive - Mellanox\Personal\Python\Nex Triana>python main.py
+C:\Users\evgeniyge\OneDrive\Personal\Python\NexTriana>python main.py
 
 Items without rating:
 1 - The Ender Quartet Series (4 Book Series)
