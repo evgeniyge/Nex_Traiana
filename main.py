@@ -14,7 +14,7 @@ def main():
     obj.openUrl()
     obj.search()
     if(obj.getResultsNum() < obj.getActualResultsNum()):
-        print ("Actual results num %d, expected %d" % (obj.resultNum, obj.actualResultsNum))
+        print ("Expected results num %d, actual %d" % (obj.resultNum, obj.actualResultsNum))
 
     nameList = obj.getItemsWithoutRating()
     if (nameList):
