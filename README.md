@@ -21,6 +21,8 @@ by Orson Scott Card
 Kindle Edition
 $ 20 08
 Auto-delivered wirelessly
+
+
 2 - Sponsored
 
 Freedom's Fury (Freedom's Fire Book 2)May 8, 2017
@@ -33,6 +35,8 @@ $ 0 99 to buy
 Auto-delivered wirelessly
 2
 Borrow for free from your Kindle device.Join Amazon Prime
+
+
 3 - Sponsored
 
 Freedom's Fray (Freedom's Fire Book 3)Aug 6, 2017
