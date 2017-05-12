@@ -1,7 +1,7 @@
 Object oriented solution for NEX traiana exercise
 Description:
-Browser.py -  Class file
-main.py - Python3 file (main file)
+1) Browser.py -  Class file
+2) main.py - Python3 file (main file)
 
 Prerequisites: 
 1) Python 3 
