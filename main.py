@@ -13,6 +13,10 @@ def main():
         sys.exit(1)
     obj.openUrl()
     obj.search()
+    resultsLists = obj.getResulstList()
+    if (len(resultsLists) ==0):
+        print ("No results")
+        sys.exit(1)
     if(obj.getResultsNum() < obj.getActualResultsNum()):
         print ("Expected results num %d, actual %d" % (obj.resultNum, obj.actualResultsNum))
 
