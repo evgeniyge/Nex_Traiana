@@ -35,38 +35,29 @@ class browser:
             return self.resultNum
         return 0
     
-    def getActualResultsNum(self, xpath = "//*[@id='s-result-count']"):
-        resultId = "result_"
-        if (self.resultNum):
-            actualNumResults = self.resultNum - 1
-        else:
-            actualNumResults = 0
-        while (True):
-            try:
-                item = self.browser.find_element_by_id(resultId + str(actualNumResults))
-                actualNumResults += 1
-            except NoSuchElementException:
-                self.actualResultsNum = actualNumResults
-                break
-        return actualNumResults
+    def getResulstList(self,cssStr = "result_" ):
+        self.elements = self.browser.find_elements_by_css_selector('[id*="%s"]' % cssStr)
+        self.actualResultsNum = len(self.elements)
+        return self.elements
+    
+    def getActualResultsNum(self):
+        return self.actualResultsNum
     
     
     def  getItemsWithoutRating(self):
-        resultId = "result_"
-        cssStr = "#result_"
-        cssStr2 = "> div > div > div > div.a-fixed-left-grid-col.a-col-right > div:nth-child(2) > div.a-column.a-span5.a-span-last > div:nth-child(1)"
         nameList = []
-        for i in range(self.actualResultsNum):
-            item = self.browser.find_element_by_id(resultId + str(i))
+        for item in self.elements:
             try:
-                self.browser.find_element_by_css_selector(cssStr + str(i) + cssStr2)
+                item.find_element_by_class_name('a-icon-alt')
             except NoSuchElementException:
                 nameList.append(item.text)
-                
-        
         return nameList
     
+    def close(self):
+        if(self.browser):
+            self.browser.close()
+            self.browser = 0
+    
     def __del__(self):
-        self.browser.close()
-
+        self.close()
         
